@@ -1,0 +1,23 @@
+This is a great start. I think most of what you want is in there, but there are a few points (listed below) where you should think about making this more digestable to an audience who is going to be unfamiliar with most of this stuff. 
+
+In the intro you should really summarize what you're about to talk about. Say explicitly that you have a way of learning gradient long-distance phonotactics using a statistical model that takes advantage of the SP nature of consonant harmony. Also that you test it successfully on Quechua, and that this contradicts claims by G&G that it can't be done. Also cite Heinz's work showing that *factoring* learning into smaller sub-grammars is a big part of it.
+
+Notes:
+
+sl#
+1   "in" -> "with a" or "in a"
+4   People might get picky about saying that H&W08 is an n-gram learner, because it uses features. Make sure you're clear about that when presenting
+5   Re: explosion, cite H&W08 and G&G19. But also mention that any such approximation completely misses the generalization (and cite Heinz 10)
+8   Too long of an explanation. Say "Phonological generalizations live in subregular regions of the Chomsky Hierarchy characterizable by restrictive logical power (Heinz 2018)".
+    Note that determinism doesn't factor in yet b/c this slide is about language classes and determinism doesn't factor in to expressivity of FSAs
+    In fact, this slide might not strictly be necessary.
+9   nonlocal n-grams are better known as "subsequences", not SP stringsets
+    Rapidly but not super rapidly. For k=2 it's just n^2, which is quadratic. You can cite Heinz 2010 there.
+    You should also have some sort of parallel to the diagram on Sl 7, to make it clear that SP can capture patterns like Chumash
+17  I don't know if you're going to have the time to also go into features, and I doubt your audience is going to have the capacity to absorb it as well. Just focus on the alphabet-based learner, but mention that you can extend these ideas to a feature-based model, which you have done, and which produces similar results.
+18  Highlight what is it in the machines that ban the subsequences you talk about it. This slide is a *lot* to take in.
+20  Can you illustrate how this algorithm works instead of just listing it out?
+27  Here you're using 'subsequence' for the first time
+    Also, this slide is explaining the idea behind how the grammars/learning work, so it seems like it should come much earlier?
+
+28  You've done all this great work evaluating G&G's model, don't you want to throw in at least a few bullet points to do some theory comparison?

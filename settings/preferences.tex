@@ -1,0 +1,79 @@
+% настройки polyglossia
+\setdefaultlanguage{english}
+% \setotherlanguage{english}
+
+% локализация
+\graphicspath{ {} }
+\addto\captionsrussian{
+  \renewcommand{\partname}{Chapter}
+  \renewcommand{\contentsname}{Content}
+  \renewcommand{\figurename}{Figure}
+  \renewcommand{\listingscaption}{List}
+}
+
+% основной шрифт документа
+\setmainfont{CMU Serif}
+
+% перечень использованных источников
+% \addbibresource{refs.bib}
+
+% оформление презентации
+\usetheme{metropolis}
+\usecolortheme{seagull}
+\beamertemplatenavigationsymbolsempty
+
+% настройка ссылок и метаданных документа
+\hypersetup{unicode=true,
+    % colorlinks=true,
+    filecolor=magenta,
+    linkcolor={darkred},
+    citecolor={darkred},
+    urlcolor={darkred}       		       
+    pdftitle={\docname},   	    
+    pdfauthor={\studentname},      
+    pdfsubject={\docname},         
+    pdfcreator={\studentname}, 	       
+    pdfproducer={Overleaf}, 		     
+    pdfkeywords={\docname}
+}
+
+% настройка подсветки кода и окружения для листингов
+\usemintedstyle{colorful}
+\newenvironment{code}{\captionsetup{type=listing}}{}
+
+% шрифт для листингов с лигатурами
+\setmonofont{FiraCode-Regular.otf}[
+    Path = templates/,
+    Contextuals=Alternate
+]
+
+% путь к каталогу с рисунками
+\graphicspath{{fig/}}
+
+% настоящее матожидание
+\newcommand{\MExpect}{\mathsf{M}}
+
+% объявили оператор!
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%%%%%%%COLOR%%%%%%%%
+\definecolor{Purple}{HTML}{911146}
+\definecolor{Orange}{HTML}{CF4A30}
+\definecolor{Red}{RGB}{224,69,86}
+\definecolor{scarlet}{rgb}{1.0, 0.13, 0.0}
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
+\definecolor{myblue}{RGB}{89,142,213}
+\definecolor{myred}{RGB}{199,101,93}
+\newcounter{myframe}
+\definecolor{almond}{rgb}{0.94, 0.87, 0.8}
+\definecolor{aliceblue}{rgb}{0.94, 0.97, 1.0}
+\definecolor{atomictangerine}{rgb}{1.0, 0.6, 0.4}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+
+\definecolor{lightsalmon}{rgb}{1.0, 0.63, 0.48}
+\definecolor{rufous}{rgb}{0.66, 0.11, 0.03}
+\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+\definecolor{red}{RGB}{169, 64, 100}
+\definecolor{cadmiumred}{rgb}{0.89, 0.0, 0.13}

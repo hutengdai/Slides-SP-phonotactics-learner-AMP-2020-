@@ -1,0 +1,72 @@
+\usepackage{tikz-cd}
+\usepackage[ruled,vlined]{algorithm2e}
+
+% настройка кодировки, шрифтов и русского языка
+\usepackage{fontspec}
+\usepackage{tipa}
+\usepackage{polyglossia}
+\usepackage{wasysym}
+% рабочие ссылки в документе
+\usepackage{hyperref}
+
+% графика
+\usepackage{graphicx}
+
+% качественные листинги кода
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{lstfiracode}
+
+% отключение копирования номеров строк из листинга, работает не во всех просмотрщиках (в Adobe Reader работает)
+\usepackage{accsupp}
+\newcommand\emptyaccsupp[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+\let\theHFancyVerbLine\theFancyVerbLine
+\def\theFancyVerbLine{\rmfamily\tiny\emptyaccsupp{\arabic{FancyVerbLine}}}
+
+ 
+\usepackage{apacite}
+\usepackage{natbib}
+\renewcommand{\bibsection}{\subsubsection*{\bibname } }   
+\usepackage{caption} 
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{float}
+
+% разное для математики
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools, stmaryrd}
+\usepackage{gb4e}
+\usepackage{textgreek}
+
+
+% водяной знак на документе, см. main.tex
+\usepackage[printwatermark]{xwatermark} 
+
+% для презентаций
+% \usepackage{here}
+% \usepackage{animate}
+% \usepackage{bm}
+
+\usepackage{booktabs}
+% \usepackage[all]{xy}
+
+
+\usepackage{tikz}
+
+\usepackage{pgf}
+
+\usetikzlibrary{chains,fit,shapes,shapes.symbols,shapes.geometric,scopes,quotes}
+\usetikzlibrary{automata,arrows,matrix,backgrounds,calc,positioning}
+\tikzset{->, 
+>=stealth, % makes the arrow heads bold
+% node distance=3cm, % specifies the minimum distance between two nodes. Change if necessary.
+every state/.style={}, % sets the properties for each ’state’ node
+every loop/.style={min distance=9mm,in=80,out=100,looseness=6},
+initial text=$ $, % sets the text that appears on the start arrow
+}
+
+\usetikzlibrary{decorations.pathreplacing, arrows.meta}
+
+
+\usepackage{xspace}
+
+\usepackage[ruled,vlined]{algorithm2e}
